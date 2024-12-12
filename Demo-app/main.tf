@@ -8,7 +8,7 @@ terraform {
 }
 
 resource "google_container_cluster" "gke_cluster" {
-  name     = "my-gke-cluster"
+  name     = "my-cluster"
   location = "us-central1-a"  
 
   initial_node_count = 1  # Start with 2 nodes for initial scalability
