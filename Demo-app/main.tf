@@ -7,6 +7,12 @@ terraform {
   }
 }
 
+provider "google" {
+    project = "gke-cluster-443909"
+    credentials = "./key.json"
+  
+}
+
 resource "google_container_cluster" "gke_cluster" {
   name     = "my-cluster"
   location = "us-central1-a"  
