@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: test-app
-          image: ashokgcp6/dockerdemo:latest
+          image: rajeshdoddy/dockerimage01:latest
           ports:
             - containerPort: 80
